@@ -25,6 +25,11 @@ const AddTransaction = () => {
     return(
         <>
         <h3> Add New Transaction </h3>
+        <label for="transaction">Choose a Transaction: <br /></label>
+        <select>
+                 <option value="income">Income</option>
+                 <option value="expense">Expense</option>
+        </select>
         <form onSubmit={onSubmit}>
             <div className="form-control">
                 <label htmlFor="text">Text</label>
